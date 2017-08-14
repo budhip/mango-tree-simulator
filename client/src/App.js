@@ -44,51 +44,41 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <h1>Mango Tree</h1>
-      {renderIf(this.state.umurSekarang < 3) (
-        <div class="justify-content-center row">
-          <img class="" src={benih} alt="mangoo-tree" width="300"></img>
-          <p> Umur: {this.state.umurSekarang} tahun </p>
-          <p> Tinggi: {this.state.tinggiSekarang} meter </p>
-          <p> Buah: {this.state.buahSekarang} buah </p>
-        </div>
-      )}
+        <h1>Mango Tree</h1>
+        {renderIf(this.state.umurSekarang < 3)(
+          <div className="justify-content-center row">
+            <img className="" src={benih} alt="mangoo-tree" width="300"></img>
+          </div>
+        )}
 
-      {renderIf(this.state.umurSekarang > 2 && this.state.umurSekarang < 5)(
-        <div class="justify-content-center row">
-          <img class="" src={tunas} alt="mangoo-tree" width="300"/>
-          <p> Umur: {this.state.umurSekarang} tahun </p>
-          <p> Tinggi: {this.state.tinggiSekarang} meter </p>
-          <p> Buah: {this.state.buahSekarang} buah </p>
-        </div>
-      )}
+        {renderIf(this.state.umurSekarang > 2 && this.state.umurSekarang < 5)(
+          <div className="justify-content-center row">
+            <img className="" src={tunas} alt="mangoo-tree" width="300"></img>
+          </div>
+        )}
 
-      {renderIf(this.state.umurSekarang > 4 && this.state.umurSekarang < 8)(
-        <div class="justify-content-center row">
-          <img class="" src={muda} alt="mangoo-tree" width="300"/>
-          <p> Umur: {this.state.umurSekarang} tahun </p>
-          <p> Tinggi: {this.state.tinggiSekarang} meter </p>
-          <p> Buah: {this.state.buahSekarang} buah </p>
-        </div>
-      )}
+        {renderIf(this.state.umurSekarang > 4 && this.state.umurSekarang < 8)(
+          <div className="justify-content-center row">
+            <img className="" src={muda} alt="mangoo-tree" width="300"></img>
+          </div>
+        )}
 
-      {renderIf(this.state.umurSekarang > 7 && this.state.umurSekarang < 26)(
-        <div class="justify-content-center row">
-          <img class="" src={siappanen} alt="mangoo-tree" width="300"/>
-          <p> Umur: {this.state.umurSekarang} tahun </p>
-          <p> Tinggi: {this.state.tinggiSekarang} meter </p>
-          <p> Buah: {this.state.buahSekarang} buah </p>
-        </div>
-      )}
+        {renderIf(this.state.umurSekarang > 7 && this.state.umurSekarang < 26)(
+          <div className="justify-content-center row">
+            <img className="" src={siappanen} alt="mangoo-tree" width="300"></img>
+          </div>
+        )}
 
-      {renderIf(this.state.umurSekarang > 25)(
-        <div class="justify-content-center row">
-          <img class="" src={mati} alt="mangoo-tree" width="300"/>
-          <p> Umur: {this.state.umurSekarang} tahun </p>
-          <p> Tinggi: {this.state.tinggiSekarang} meter </p>
-          <p> Buah: 0 buah </p>
-        </div>
-      )}
+        {renderIf(this.state.umurSekarang > 25)(
+          <div className="justify-content-center row">
+            <img className="" src={mati} alt="mangoo-tree" width="300"></img>
+          </div>
+        )}
+
+        <p> Umur: {this.state.umurSekarang} tahun </p>
+        <p> Tinggi: {this.state.tinggiSekarang} meter </p>
+        <p> Buah: {this.state.buahSekarang} buah </p>
+
       </div>
     );
   }
