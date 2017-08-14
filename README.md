@@ -8,12 +8,11 @@ This mango tree only live until 26 years.
 ## Build Setup
 
 ``` bash
-# install dependencies
-npm install
-
 # running client-side
+npm install
 npm start
 
 # running server-side
+npm install
 node mango.js
 ```
